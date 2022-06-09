@@ -21,7 +21,7 @@ tensorboard serve --logdir="INSERT_TENSORBOARD_LOGDIR"  --bind_all --port=6018
 ### Training results logging and visualization with Aim
 
 [Aim](https://github.com/aimhubio/aim) is an easy-to-use and performant open-source ML experiment tracker.
-Aim logs your training runs, enables a beautiful UI to compare them and an API to query them programmatically.
+Aim logs your training runs, enables a functional UI to compare them and an API to query them programmatically.
 
 
 #### 1. Logging training results with Aim
@@ -62,7 +62,7 @@ Press Ctrl+C to exit
 
 #### 3. Exploring results with Aim UI
 
-Open your browser and navigate to `http://<host>:<port>` in your browser. By default `http://127.0.0.1:43800`.
+Open your browser and navigate to `http://<host>:<port>` in your browser. By default `http://127.0.0.1:43800` address is set.
 
 Aim UI home page will appear:
 
@@ -76,4 +76,4 @@ Select metrics to explore from the top left dropdown `+ Metrics` and click `Sear
 
 [TODO img]
 
-See Aim full documentation at [aimstack.readthedocs.io](https://aimstack.readthedocs.io)
+_See Aim full documentation at [aimstack.readthedocs.io](https://aimstack.readthedocs.io)._
