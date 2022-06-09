@@ -40,7 +40,7 @@ metaseq-train --aim_repo .
 
 #### 2. Running Aim UI to visualize the results
 
-Once training is started, open Aim UI to see the tracked results:
+Once training is started, open Aim UI to see the results:
 
 `aim up --repo ./path/to/logs`
 
@@ -52,7 +52,7 @@ Once training is started, open Aim UI to see the tracked results:
 
 _Complete list of Aim CLI usage guide find at [official docs](https://aimstack.readthedocs.io/en/latest/refs/cli.html#up)._
 
-The following message will be printed, meaning Aim UI is up and running:
+The following message will be outputted, meaning Aim UI is up and running:
 
 ```
 Running Aim UI on repo `<Repo#-5930451821203570655 path=/.aim read_only=None>`
@@ -62,7 +62,7 @@ Press Ctrl+C to exit
 
 #### 3. Exploring results with Aim UI
 
-Open your browser and navigate to http://<host>:<port> (http://127.0.0.1:43800 by default) in your browser.
+Open your browser and navigate to `http://<host>:<port>` in your browser. `http://127.0.0.1:43800` by default.
 
 Aim UI home page will appear:
 
