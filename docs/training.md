@@ -24,7 +24,7 @@ tensorboard serve --logdir="INSERT_TENSORBOARD_LOGDIR"  --bind_all --port=6018
 Aim logs your training runs, enables a beautiful UI to compare them and an API to query them programmatically.
 
 
-#### Logging training results with Aim
+#### 1. Logging training results with Aim
 
 To log metaseq training metrics and hparams with Aim, you simply need to pass an extra flag:
 ```shell
@@ -38,7 +38,7 @@ metaseq-train --aim_repo .
 | `aim_repo` | Defines the path to store collected training logs. If set to "." logs will be stored at cwd(current working directory). |
 | `aim_run_hash` | Training run hash. If skipped creates or continues run based on "save_dir". Otherwise, stores training metadata in the specified run. |
 
-#### Running Aim UI to explore the results
+#### 2. Running Aim UI to explore the results
 
 Once training is started, open Aim UI to explore the results:
 
@@ -60,7 +60,7 @@ Open http://127.0.0.1:43800
 Press Ctrl+C to exit
 ```
 
-#### Exploring results with Aim UI
+#### 3. Exploring results with Aim UI
 
 Open your browser and navigate to http://<host>:<port> (http://127.0.0.1:43800 by default) in your browser.
 
