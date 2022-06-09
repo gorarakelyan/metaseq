@@ -62,7 +62,7 @@ Press Ctrl+C to exit
 
 #### 3. Exploring results with Aim UI
 
-Open your browser and navigate to `http://<host>:<port>` in your browser. `http://127.0.0.1:43800` by default.
+Open your browser and navigate to `http://<host>:<port>` in your browser. By default `http://127.0.0.1:43800`.
 
 Aim UI home page will appear:
 
@@ -76,4 +76,4 @@ Select metrics to explore from the top left dropdown `+ Metrics` and click `Sear
 
 [TODO img]
 
-See Aim full documentation and usage guide at [aimstack.readthedocs.io](https://aimstack.readthedocs.io)
+See Aim full documentation at [aimstack.readthedocs.io](https://aimstack.readthedocs.io)
