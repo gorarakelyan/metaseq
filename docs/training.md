@@ -26,7 +26,7 @@ Aim logs your training runs, enables a beautiful UI to compare them and an API t
 
 #### Logging training results with Aim
 
-To log metaseq training metrics and hparams with an Aim, you simply need to pass an extra flag like so:
+To log metaseq training metrics and hparams with Aim, you simply need to pass an extra flag:
 ```shell
 metaseq-train --aim_repo .
 ```
@@ -38,7 +38,7 @@ metaseq-train --aim_repo .
 
 #### Running Aim UI to explore the results
 
-Once training is started, open Aim UI to explore the results
+Once training is started, open Aim UI to explore the results:
 
 `aim up --repo ./path/to/logs`
 
@@ -48,9 +48,9 @@ Once training is started, open Aim UI to explore the results
 | `-h` &#124; `--host <host>` | Specify host address to run UI on. |
 | `-p` &#124; `--port <port>` | Specify port to listen to. |
 
-_Complete list of usage guide find in [official docs](https://aimstack.readthedocs.io/en/latest/refs/cli.html#up)._
+_Complete list of Aim CLI usage guide find at [official docs](https://aimstack.readthedocs.io/en/latest/refs/cli.html#up)._
 
-You should see the following output meaning Aim UI is up and running:
+The following message will be printed, meaning Aim UI is up and running:
 
 ```
 Running Aim UI on repo `<Repo#-5930451821203570655 path=/.aim read_only=None>`
@@ -60,13 +60,16 @@ Press Ctrl+C to exit
 
 #### Exploring results with Aim UI
 
-Open your browser and navigate to http://127.0.0.1:43800(or specified <host>:<port>) in your browser.
+Open your browser and navigate to http://<host>:<port> (http://127.0.0.1:43800 by default) in your browser.
 
-Aim UI home page will appear.
+Aim UI home page will appear:
+<img>
 
-Click on Metrics Explorer icon to start exploring metrics.
+Click on Metrics Explorer icon to start exploring metrics:
+<img>
 
 Select metrics to explore from the top left dropdown `+ Metrics` and click `Search`:
+<img>
 
-See the full usage guide at [aimstack.readthedocs.io](https://aimstack.readthedocs.io)
+See Aim full documentation and usage guide at [aimstack.readthedocs.io](https://aimstack.readthedocs.io)
 
