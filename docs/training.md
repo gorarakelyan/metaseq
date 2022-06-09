@@ -38,9 +38,9 @@ metaseq-train --aim_repo .
 | `aim_repo` | Defines the path to store collected training logs. If set to "." logs will be stored at cwd(current working directory). |
 | `aim_run_hash` | Training run hash. If skipped creates or continues run based on "save_dir". Otherwise, stores training metadata in the specified run. |
 
-#### 2. Running Aim UI to explore the results
+#### 2. Running Aim UI to visualize the results
 
-Once training is started, open Aim UI to explore the results:
+Once training is started, open Aim UI to see the tracked results:
 
 `aim up --repo ./path/to/logs`
 
