@@ -31,6 +31,8 @@ To log metaseq training metrics and hparams with Aim, you simply need to pass an
 metaseq-train --aim_repo .
 ```
 
+[TODO real train cmd]
+
 | Arguments | Description |
 | --- | --- |
 | `aim_repo` | Defines the path to store collected training logs. If set to "." logs will be stored at cwd(current working directory). |
@@ -63,13 +65,15 @@ Press Ctrl+C to exit
 Open your browser and navigate to http://<host>:<port> (http://127.0.0.1:43800 by default) in your browser.
 
 Aim UI home page will appear:
-<img>
+
+[TODO img]
 
 Click on Metrics Explorer icon to start exploring metrics:
-<img>
+
+[TODO img]
 
 Select metrics to explore from the top left dropdown `+ Metrics` and click `Search`:
-<img>
+
+[TODO img]
 
 See Aim full documentation and usage guide at [aimstack.readthedocs.io](https://aimstack.readthedocs.io)
-
