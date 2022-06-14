@@ -18,15 +18,17 @@ opt-baselines \
 tensorboard serve --logdir="INSERT_TENSORBOARD_LOGDIR"  --bind_all --port=6018
 ```
 
-#### Training results logging and visualization with Aim
+#### Start Aim for in-depth training runs comparison
 
-[Aim](https://github.com/aimhubio/aim) helps to log metaseq training runs for visualization and in-depth comparison.
+```
+aim up --repo /path/to/log/dir --port 43800
+```
 
-**Bring up Aim for the project**
+Enable [Aim](https://github.com/aimhubio/aim) to log metaseq training runs for snappy visualization and in-depth comparison.
 
-To log metaseq training metrics and hparams with Aim pass an extra flag `--aim-repo /path/to/log/dir`.
+Pass an extra flag to the train command `--aim-repo /path/to/log/dir`.
 
-Example:
+Example train command with Aim enabled:
 ```shell
 metaseq-train --task streaming_language_modeling \
   data-bin/pile-00 \
@@ -45,7 +47,9 @@ metaseq-train --task streaming_language_modeling \
 
 Once the training is started, open Aim UI to see the results:
 
-`aim up --repo /path/to/log/dir --port 43800`
+```
+aim up --repo /path/to/log/dir --port 43800
+```
 
 The following message will be outputted, meaning Aim UI is up and running:
 
@@ -55,10 +59,10 @@ Open http://127.0.0.1:43800
 Press Ctrl+C to exit
 ```
 
-Open your browser and navigate to `http://127.0.0.1:43800/metrics` to visualize and explore tracked metrics.
+Open your browser and navigate to `http://127.0.0.1:43800/runs` to explore tracked runs.
 *Depending on the setup host and port can be different.*
 
-Select metrics to explore from the top left dropdown `+ Metrics` and click `Search`
+Navigate to "Metrics Explorer" and select metrics to explore from the top left dropdown `+ Metrics` and click `Search`
 
 ![Metrics Explorer](https://user-images.githubusercontent.com/13848158/173548887-6bce3a9b-c9b0-4e3c-bac7-0ed9be4e5e97.png)
 
