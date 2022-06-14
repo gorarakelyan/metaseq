@@ -58,7 +58,7 @@ Press Ctrl+C to exit
 Open your browser and navigate to `http://<host>:<port>/metrics` to visualize and explore tracked metrics.
 Select metrics to explore from the top left dropdown `+ Metrics` and click `Search`
 
-![Metrics Explorer](https://user-images.githubusercontent.com/13848158/173547055-d88cacec-588c-4762-88a6-53d74279fa61.jpg)
+![Metrics Explorer](https://user-images.githubusercontent.com/13848158/173548887-6bce3a9b-c9b0-4e3c-bac7-0ed9be4e5e97.png)
 
 - metaseq Aim arguments:
 
