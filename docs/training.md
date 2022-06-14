@@ -24,7 +24,7 @@ tensorboard serve --logdir="INSERT_TENSORBOARD_LOGDIR"  --bind_all --port=6018
 
 **Bring up Aim for the project**
 
-To log metaseq training metrics and hparams with Aim, you simply need to pass an extra flag `--aim-repo /path/to/log/dir`.
+To log metaseq training metrics and hparams with Aim pass an extra flag `--aim-repo /path/to/log/dir`.
 
 Example:
 ```shell
@@ -45,7 +45,7 @@ metaseq-train --task streaming_language_modeling \
 
 Once the training is started, open Aim UI to see the results:
 
-`aim up --repo ./path/to/logs`
+`aim up --repo /path/to/log/dir --port 43800`
 
 The following message will be outputted, meaning Aim UI is up and running:
 
@@ -55,7 +55,9 @@ Open http://127.0.0.1:43800
 Press Ctrl+C to exit
 ```
 
-Open your browser and navigate to `http://<host>:<port>/metrics` to visualize and explore tracked metrics.
+Open your browser and navigate to `http://127.0.0.1:43800/metrics` to visualize and explore tracked metrics.
+*Depending on the setup host and port can be different.*
+
 Select metrics to explore from the top left dropdown `+ Metrics` and click `Search`
 
 ![Metrics Explorer](https://user-images.githubusercontent.com/13848158/173548887-6bce3a9b-c9b0-4e3c-bac7-0ed9be4e5e97.png)
