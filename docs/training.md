@@ -22,12 +22,11 @@ tensorboard serve --logdir="INSERT_TENSORBOARD_LOGDIR"  --bind_all --port=6018
 
 [Aim](https://github.com/aimhubio/aim) helps to log metaseq training runs for visualization and in-depth comparison.
 
-*Bring up Aim for the project:*
-
-1. Log training results with Aim
+**Bring up Aim for the project**
 
 To log metaseq training metrics and hparams with Aim, you simply need to pass an extra flag `--aim-repo /path/to/log/dir`.
 
+Example:
 ```shell
 metaseq-train --task streaming_language_modeling \
   data-bin/pile-00 \
@@ -44,8 +43,6 @@ metaseq-train --task streaming_language_modeling \
   --aim-repo /path/to/log/dir
 ```
 
-2. Run Aim UI to visualize the results
-
 Once the training is started, open Aim UI to see the results:
 
 `aim up --repo ./path/to/logs`
@@ -58,17 +55,19 @@ Open http://127.0.0.1:43800
 Press Ctrl+C to exit
 ```
 
-Open your browser and navigate to `http://<host>:<port>/metrics` in your browser to open a page to explore tracked metrics.
+Open your browser and navigate to `http://<host>:<port>/metrics` to visualize and explore tracked metrics.
 Select metrics to explore from the top left dropdown `+ Metrics` and click `Search`
 
-metaseq Aim arguments:
+![Metrics Explorer](https://user-images.githubusercontent.com/13848158/173547055-d88cacec-588c-4762-88a6-53d74279fa61.jpg)
+
+- metaseq Aim arguments:
 
 | Arguments | Description |
 | --- | --- |
 | `aim_repo` | Defines the path to store collected training logs. If set to "." logs will be stored at cwd(current working directory). |
 | `aim_run_hash` | Training run hash. If skipped creates or continues run based on "save_dir". Otherwise, stores training metadata in the specified run. |
 
-aim up arguments:
+- aim up arguments:
 
 | Arguments | Description |
 | --- | --- |
